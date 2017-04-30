@@ -145,7 +145,7 @@ bool neural::teaching()
 
 void neural::resetW()
 {
-	w = vector<vector<vector<double> > >(2, vector<vector<double>>());
+	w = vector<vector<vector<double> > >(2, vector<vector<double> >());
 	for (int i = 0; i < N; ++i) // Aiaaaeyai ana aana ne?uoiai neiy 
 		w[0].push_back(vector<double>(J, 0));
 
