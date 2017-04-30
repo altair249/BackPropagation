@@ -71,7 +71,7 @@ bool neural::teaching()
 	{
 		vector<double> outHidden;					// Auoia ne?uoiai neiy eee aoia iineaaiaai neiy
 		outY.push_back(vector<double>());		// Auoia auoiaiiai neiy eee y
-		vector<vector<double>> delta;				// delta aey ea?aiai neiy
+		vector<vector<double> > delta;				// delta aey ea?aiai neiy
 		delta.push_back(vector<double>());          // aey ne?uoiai
 		delta.push_back(vector<double>());          // aey auoiaiiai
 		rmsError = 0;
@@ -145,7 +145,7 @@ bool neural::teaching()
 
 void neural::resetW()
 {
-	w = vector<vector<vector<double>>>(2, vector<vector<double>>());
+	w = vector<vector<vector<double> > >(2, vector<vector<double>>());
 	for (int i = 0; i < N; ++i) // Aiaaaeyai ana aana ne?uoiai neiy 
 		w[0].push_back(vector<double>(J, 0));
 
